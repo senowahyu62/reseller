@@ -1,4 +1,4 @@
 <?php
-$nganu=shell_exec('ceklcn$lcnmu');
+$nganu=shell_exec('ganti');
 echo "$nganu";
 ?>
