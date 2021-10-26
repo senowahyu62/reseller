@@ -6,7 +6,7 @@ akitiftekan="$(cat /data/lcn | grep -w "ganti" | cut -d: -f2|sed 's/ //g')"
 maxinstall="$(cat /data/lcn | grep -w "ganti" | cut -d: -f3|sed 's/ //g')"
 olehinstall="$(cat /data/lcn | grep -w "ganti" | cut -d: -f4|sed 's/ //g')"
 olehinstall2="$(($(cat /data/lcn | grep -w "ganti" | cut -d: -f4|sed 's/ //g')-1))"
-sed -ief "s|ganti      :$aktiftekan      : $maxinstall      : $olehinstall |ganti      :$aktiftekan      : $maxinstall      : $olehinstall2 |g"
+sed -ief "s|ganti      :$aktiftekan      : $maxinstall      : $olehinstall |ganti      :$aktiftekan      : $maxinstall      : $olehinstall2 |g" /data/lcn
 else
 clear
 echo -e "ganti Tidak Terdaftar"
